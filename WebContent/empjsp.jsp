@@ -4,9 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>CareerWeb User Page</title>
-
-
+<title>Insert title here</title>
 <%@ include file="header_login.html"%>
 </head>
 <body>
@@ -14,13 +12,22 @@
 <section class="about text-center" id="about">
 				<div class="container">
 					<div class="row">
-		
-						<h2>Welcome User</h2>   
+						<h2></h2>
+						<br>
+						<br>
+						<br>
+						<br><br>
 						<h4>Career Web has been the industry's standard ever since 2018</h4>
-<h1>Welcome User  </h1>
+<h1>Welcome  Employee</h1>
+<div align="center">
 
 
+<h3><a href="addcollege.jsp" class="nav-link" >Add Colleges</a></h3>
+<h3><a href="view_emp.jsp" class="nav-link" >View Colleges</a></h3>
+<h3><a href="create_emp.jsp" class="nav-link" >Add notes</a></h3>
+<h3><a href="create_emp.jsp" class="nav-link" >Add Syllabus</a></h3>
+<h3><a href="create_emp.jsp" class="nav-link" >Add ebooks </a></h3>
+</div>
 
-<%@ include file="footer.html"%>
 </body>
 </html>

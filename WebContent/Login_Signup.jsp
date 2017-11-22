@@ -28,7 +28,19 @@
 <div class="cont_ba_opcitiy">
         
         <h2>LOGIN</h2>  
-  <p>.</p> 
+        
+          <%
+	String msg=request.getParameter("msg");
+          String color=request.getParameter("color");
+
+      	if(msg!=null)
+      	{
+      %>
+	<p class="<%=color%>"><%=msg%></p>
+      <%
+      	}
+      %>
+     <p>.</p> 
   <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
   </div>
   </div>
@@ -58,8 +70,10 @@
  <div class="cont_form_login">
 <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
    <h2>LOGIN</h2>
+  
    <form action=login.jsp>
- <input type="text" placeholder="Email" name=email required/>
+  
+ <input type="email" placeholder="Email" name=email required/>
  <br>
  <br>
 <input type="password" placeholder="Password" name=pass required/>
@@ -67,8 +81,10 @@
 <br>
 <label><b>Select User</b></label>  
     <select name="user">
-    <option>Admin</option>
     <option>User</option>
+    <option>Emp</option>
+    <option>Admin</option>
+    
  
     </select>   
     <br>
@@ -81,7 +97,7 @@
      <form action=registerdb.jsp method="post">
      <br>
      <br>
-<input type="text" placeholder="Email" name=email required />
+<input type="email" placeholder="Email" name=email required />
 <br>
 <br>
 <input type="text" placeholder="Name" name=name required />
